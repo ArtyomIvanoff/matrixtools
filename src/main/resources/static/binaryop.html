@@ -2,9 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- it ensures that screen width is equal to device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/webjars/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Add some icons -->
+    <link rel="stylesheet" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- add custom CSS also -->
+    <link rel="stylesheet" href="css/main.css">
     <title>Bibnary Operations</title>
 </head>
 <body>
+<!-- add navigation bar with nav element and apply some classes for its view -->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <!-- add the button to expand/collapse navigation list -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <!-- add icon for button (only for sm and xs screens) -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- name of the site (which can be replaced by the image later) -->
+        <a class="navbar-brand mr-auto" href="./index.html">Matrix Tools</a>
+
+        <!-- this div links button and nav list (with #Navbar)
+             Notice that we use collapse plugin for hiding|showing navigation-->
+        <div class="collapse navbar-collapse" id="Navbar">
+            <!-- add navbar links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">
+                        <!-- add home icon -->
+                        <span class="fa fa-home fa-lg"></span>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./unaryop.html">
+                        <!-- add calculator icon -->
+                        <span class="fa fa-calculator fa-lg"></span>
+                        Unary Operations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <!-- add plus icon -->
+                        <span class="fa fa-plus fa-lg"></span>
+                        Binary Operations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">
+                        <!-- add info icon -->
+                        <span class="fa fa-info fa-lg"></span>
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-6">
+                <h1>Matrix Tools</h1>
+
+                <p>
+                    Whether you're a CS student or just like mathematics,
+                    this tiny site will help you with various matrix operations.
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <!-- add breadcrumb as alternative navigation -->
+            <ol class="col-12 breadcrumb">
+                <!-- this is a breadcrumb item-->
+                <li class="breadcrumb-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Binary Operations</li>
+            </ol>
+            <h3>Binary Operations</h3>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./unaryop.html">Unary</a></li>
+                    <li><a href="#">Binary</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-7 col-sm-5">
+                <h5>Contacts</h5>
+                <address>
+                    <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:iva34609707@ya.ru">iva34609707@ya.ru</a><br>
+                    <i class="fa fa-briefcase fa-lg"></i>: <a href="https://github.com/ArtyomIvanoff">My GitHub
+                    profile</a>
+                </address>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2019 Artyom Ivanov</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
+<script src="/webjars/popper.js/1.12.9/popper.min.js"></script>
+<script src="/webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
