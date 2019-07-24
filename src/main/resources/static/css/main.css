@@ -1,0 +1,24 @@
+body {
+    /* move body below the navigation*/
+    padding: 50px 0 0 0;
+    z-index: 0;
+}
+
+/* specify color of navbar*/
+.navbar-dark {
+    background-color: #30aa35;
+}
+
+/* specify settings fot the header */
+.jumbotron {
+    margin: 0 auto;
+    padding: 70px 30px;
+    background: #46cd2d;
+    color: floralwhite;
+}
+
+.footer {
+    background-color: #a6f897;
+    margin: 0 auto;
+    padding: 20px 0;
+}
