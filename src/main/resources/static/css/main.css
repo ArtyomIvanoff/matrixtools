@@ -12,7 +12,7 @@ body {
 /* specify settings fot the header */
 .jumbotron {
     margin: 0 auto;
-    padding: 70px 30px;
+    padding: 50px 30px;
     background: #46cd2d;
     color: floralwhite;
 }

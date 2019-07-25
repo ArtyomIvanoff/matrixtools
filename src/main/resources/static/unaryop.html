@@ -33,14 +33,14 @@
             <!-- add navbar links -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="./index.html">
                         <!-- add home icon -->
                         <span class="fa fa-home fa-lg"></span>
                         Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./unaryop.html">
+                    <a class="nav-link" href="#">
                         <!-- add calculator icon -->
                         <span class="fa fa-calculator fa-lg"></span>
                         Unary Operations
@@ -91,13 +91,54 @@
                 </li>
                 <li class="breadcrumb-item active">Unary Operations</li>
             </ol>
-            <h3>Unary Operations</h3>
-            <hr>
         </div>
     </div>
+    <!-- add form for the unary operations -->
+    <div class="row row-content align-content-center">
+        <div class="col-12 col-sm-8 offset-sm-2">
+            <div class="card">
+                <h3 class="card-header">Here you can perform unary operations.</h3>
 
-    <div class="row">
+                <div class="card-body">
+                    <form id="unary_op_form">
+                        <div class="row form-group">
+                            <label class="col-sm-2 col-form-label">1. Enter a matrix</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="unary_op_matrix" rows="5"
+                                          placeholder="10;1 0&#10;0 1" required>
+                                </textarea>
+                            </div>
+                        </div>
 
+                        <div class="row mt-3 form-group">
+                            <label class="col-sm-2 col-form-label">2. Choose an unary operation </label>
+                            <div class="col-sm-4">
+                                <select class="custom-select custom-select-sm">
+                                    <option value="transpose" selected>Transposition</option>
+                                    <option value="trace">Trace</option>
+                                    <option value="determinant">Determinant</option>
+                                    <option value="inverted">Inverted matrix</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3  form-group">
+                            <div class="col-sm-10 offset-sm-2">
+                                <button type="submit" class="btn btn-primary btn-lg" id="btn-unary">Perform</button>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3  form-group">
+                            <div class="card col-sm-10 offset-sm-2">
+                                <h4 class="card-header">Result</h4>
+                                <div class="card-body">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -132,7 +173,7 @@
 </footer>
 
 <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
-<script src="/webjars/popper.js/1.12.9/popper.min.js"></script>
+<script src="/webjars/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="/webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

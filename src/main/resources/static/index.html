@@ -25,7 +25,7 @@
         </button>
 
         <!-- name of the site (which can be replaced by the image later) -->
-        <a class="navbar-brand mr-auto" href="./index.html">Matrix Tools</a>
+        <a class="navbar-brand mr-auto" href="#">Matrix Tools</a>
 
         <!-- this div links button and nav list (with #Navbar)
              Notice that we use collapse plugin for hiding|showing navigation-->
@@ -82,7 +82,51 @@
 
 <div class="container">
     <div class="row row-content">
-        <h1>Welcome to the Matrix Tools!</h1>
+        <div class="col-12 col-sm-8">
+            <h2>What is a matrix?</h2>
+
+            <p>
+                As <a href="https://en.wikipedia.org/wiki/Matrix_(mathematics)">Wikipedia</a> says,
+                in mathematics, matrix is a rectangular array of numbers, symbols or expressions, arranged
+                in rows and columns.
+                This the matrix with 2 rows and 3 columns.
+            </p>
+        </div>
+
+        <div class="col-8 offset-2">
+            <img class="img-fluid mx-auto d-block" src="img/matrix_eq.png" alt="eq-matrix">
+        </div>
+
+        <div class="col-12 col-sm-8 mt-3">
+            Square matrix — a matrix with the same number and columns.
+        </div>
+
+        <div class="col-8 offset-2">
+            <img class="img-fluid mx-auto d-block" src="img/square_matrix.png" alt="square-matrix">
+        </div>
+
+        <div class="col-12 col-sm-8 mt-3">
+            We can perform various operations with matrices: unary operations (determinant, trace and so on)
+            which require only one matrix, and binary operations (addition, multiplication etc) which uses two matrices
+            as input. However, some of these operations are applied only for square matrices.
+        </div>
+
+        <div class="col-8 offset-2">
+            <img class="img-fluid mx-auto d-block" src="img/matrix_product.jpg" alt="matrix-product">
+        </div>
+    </div>
+
+    <div class="row row-content mt-3">
+        <div class="col-12 col-sm-8">
+            <h2>What can Matrix Tools do?</h2>
+
+            <p>
+                At the moment, it can perform such unary and binary operations as
+                determinant, trace, transposition, finding inverse matrix,
+                matrix addition, multiplication by a scalar, matrix product.
+                More operations might be added in the future.
+            </p>
+        </div>
     </div>
 </div>
 
@@ -104,7 +148,8 @@
                 <h5>Contacts</h5>
                 <address>
                     <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:iva34609707@ya.ru">iva34609707@ya.ru</a><br>
-                    <i class="fa fa-briefcase fa-lg"></i>: <a href="https://github.com/ArtyomIvanoff">My GitHub profile</a>
+                    <i class="fa fa-briefcase fa-lg"></i>: <a href="https://github.com/ArtyomIvanoff">My GitHub
+                    profile</a>
                 </address>
             </div>
         </div>
@@ -117,7 +162,7 @@
 </footer>
 
 <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
-<script src="/webjars/popper.js/1.12.9/popper.min.js"></script>
+<script src="/webjars/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="/webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
