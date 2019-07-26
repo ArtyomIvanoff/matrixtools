@@ -101,7 +101,7 @@
                 <h3 class="card-header">Here you can perform unary operations.</h3>
 
                 <div class="card-body">
-                    <form id="unary_op_form">
+                    <form id="binary_op_form">
                         <div class="row form-group">
                             <label class="col-sm-2 col-form-label">1. Enter the first matrix</label>
                             <div class="col-sm-8">
@@ -114,15 +114,15 @@
                         <div class="row mt-3 form-group">
                             <label class="col-sm-2 col-form-label">2. Choose a binary operation </label>
                             <div class="col-sm-4">
-                                <select class="custom-select custom-select-sm">
+                                <select id="select_operation" class="custom-select custom-select-sm">
                                     <option value="addition" selected>Addition</option>
-                                    <option value="trace">Matrix product</option>
-                                    <option value="determinant">Scalar multiplication</option>
+                                    <option value="product">Matrix product</option>
+                                    <option value="scalar_mult">Scalar multiplication</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="row mt-3 form-group">
+                        <div class="row mt-3 mb-3 form-group">
                             <label class="col-sm-2 col-form-label">3. Enter the second matrix</label>
                             <div class="col-sm-8 offset-sm-2">
                                 <textarea class="form-control" id="binary_op_matrix2" rows="5"
@@ -137,13 +137,7 @@
                             </div>
                         </div>
 
-                        <div class="row mt-3 form-group">
-                            <div class="card col-sm-10 offset-sm-2">
-                                <h4 class="card-header">Result</h4>
-                                <div class="card-body">
-                                </div>
-                            </div>
-                        </div>
+                        <div id="result"></div>
                     </form>
                 </div>
             </div>
@@ -184,5 +178,7 @@
 <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
 <script src="/webjars/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="/webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js">
+</script>
 </body>
 </html>

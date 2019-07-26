@@ -113,7 +113,7 @@
                         <div class="row mt-3 form-group">
                             <label class="col-sm-2 col-form-label">2. Choose an unary operation </label>
                             <div class="col-sm-4">
-                                <select class="custom-select custom-select-sm">
+                                <select id="select_operation" class="custom-select custom-select-sm">
                                     <option value="transpose" selected>Transposition</option>
                                     <option value="trace">Trace</option>
                                     <option value="determinant">Determinant</option>
@@ -122,19 +122,13 @@
                             </div>
                         </div>
 
-                        <div class="row mt-3  form-group">
+                        <div class="row mt-3 mb-3 form-group">
                             <div class="col-sm-10 offset-sm-2">
                                 <button type="submit" class="btn btn-primary btn-lg" id="btn-unary">Perform</button>
                             </div>
                         </div>
 
-                        <div class="row mt-3  form-group">
-                            <div class="card col-sm-10 offset-sm-2">
-                                <h4 class="card-header">Result</h4>
-                                <div class="card-body">
-                                </div>
-                            </div>
-                        </div>
+                        <div id="result"></div>
                     </form>
                 </div>
             </div>
@@ -175,5 +169,6 @@
 <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
 <script src="/webjars/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="/webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
