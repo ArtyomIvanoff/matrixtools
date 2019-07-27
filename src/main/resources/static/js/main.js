@@ -34,8 +34,8 @@ function ajax_submit(requestBody) {
         cache: false,
         timeout: 600000,
         success: function (response) {
-            var json_result = "<h4>Result<h4>" + response["result"];
-            $("#result").html(json_result);
+            var json_result = "<h4>Result<h4> <pre>" + response["result"] + "</pre>";
+            $("#result").html(json_result); // add inside the document
         },
         error: function (e) {
             console.log("Error: " + e);
