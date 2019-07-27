@@ -51,7 +51,7 @@ public class MatrixService {
 
         // get rows of converted numbers
         List<double[]> parsedRows = Arrays.stream(rows)
-                .map(row -> row.trim().split(" "))
+                .map(row -> row.trim().split("\\s+"))
                 .map(rowElements -> Arrays.stream(rowElements).mapToDouble(Double::parseDouble).toArray())
                 .collect(Collectors.toList());
         // assume that every row has the same length
