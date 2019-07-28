@@ -34,11 +34,12 @@ function ajax_submit(requestBody) {
         cache: false,
         timeout: 600000,
         success: function (response) {
-            var json_result = "<h4>Result<h4> <pre>" + response["result"] + "</pre>";
+            var json_result = "<h4>Result<h4> <pre>" + response["result"] + "</pre>"; // put the result of the request
             $("#result").html(json_result); // add inside the document
         },
         error: function (e) {
-            console.log("Error: " + e);
+            var error_result = "<h4>Error<h4>" + e.responseJSON.msg; // in responseJSON our response body with msg field
+            $("#result").html(error_result);
         }
     });
 }

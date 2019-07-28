@@ -12,7 +12,7 @@ public class MatrixServiceTest extends Assert {
     private static final double eps = 1e-6;
     @Test
     public void testEqualityMatrix() {
-        String eqMatrixStr = "1 0\n0 1";
+        String eqMatrixStr = "  1 0   \n 0  1";
 
         try {
             RealMatrix parsedMatrix = matrixService.parseMatrix(eqMatrixStr);
